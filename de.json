@@ -1,0 +1,8 @@
+{
+  "Description": "Integriere dein Stream Deck in dein IFTTT-Setup und steuere deine Smart-Home-Geräte.",
+  "Name": "IFTTT-Integration",
+  "de.tobimori.streamdeckifttt.button": {
+    "Name": "IFTTT-Button",
+    "Tooltip": "Wie oft wurdest du heute schon gepwnt? Dieser Zähler sagt es dir."
+  }
+}

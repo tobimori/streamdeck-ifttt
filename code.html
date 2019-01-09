@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>de.tobimori.streamdeckifttt</title>
+    <meta charset="utf-8" />
+    <script src="common.js"></script>
+</head>
+
+<body>
+    <script>
+    	
+    	var websocket = null;
+    	var pluginUUID = null;
+    	
+    	var DestinationEnum = Object.freeze({"HARDWARE_AND_SOFTWARE":0, "HARDWARE_ONLY":1, "SOFTWARE_ONLY":2})
+    	
+    	var webhookAction = {
+			
+			type : "de.tobimori.streamdeckifttt.button",
+			
+			onKeyDown : function(context, settings, coordinates, userDesiredState) {
+			},
+
+			onKeyUp : function(context, settings, coordinates, userDesiredState) {
+                if (settings != null) {
+                    if (settings.hasOwnProperty('setName')){
+                        setName = settings["setName"];
+                    }
+                    else {
+                        this.Alert(context, "Alert");
+                    }
+                    if (settings.hasOwnProperty('setKey')) {
+                        setKey = settings["setKey"]
+                    }
+                    else {
+                        this.Alert(context, "Alert");
+                    }
+                }
+                const request = new XMLHttpRequest();
+                const url = 'https://maker.ifttt.com/trigger/' + setName + '/with/key/' + setKey;
+                request.open("POST", url);
+                request.send();
+                this.Alert(context, "Ok");
+			},
+
+			onWillAppear : function(context, settings, coordinates) {
+
+			},
+
+
+            Alert : function(context, alerttype) {
+                var json = {
+                    "event": "show" + alerttype,
+                    "context": context,
+                };
+
+                websocket.send(JSON.stringify(json))
+            },
+
+            SetSettings : function(context, settings) {
+				var json = {
+					"event": "setSettings",
+					"context": context,
+					"payload": settings
+				};
+			    console.log(json);
+				websocket.send(JSON.stringify(json));
+			},
+
+            SendSettings : function(action, settings, opaqueValue) {
+                var json = {
+                    "action": action,
+                    "event": "sendToPropertyInspector",
+                    "context": opaqueValue,
+                    "payload": settings
+                };
+                websocket.send(JSON.stringify(json));
+            }
+
+		};
+    	
+        function connectSocket(inPort, inPluginUUID, inRegisterEvent, inInfo)
+         {
+         	pluginUUID = inPluginUUID;
+         	
+			// Open the web socket
+			websocket = new WebSocket("ws://localhost:" + inPort);
+			
+			function registerPlugin(inPluginUUID)
+			 {
+				var json = {
+					"event": inRegisterEvent,
+					"uuid": inPluginUUID
+				};
+			
+				websocket.send(JSON.stringify(json));
+			 };
+			
+			websocket.onopen = function()
+			{
+				// WebSocket is connected, send message
+				registerPlugin(pluginUUID);
+			};
+
+			websocket.onmessage = function (evt)
+			{ 
+				// Received message from Stream Deck
+				var jsonObj = JSON.parse(evt.data);
+				var event = jsonObj['event'];
+				var action = jsonObj['action'];
+				var context = jsonObj['context'];
+                var jsonPayload = jsonObj['payload'];
+
+				if(event == "keyDown")
+				{
+                    var settings = jsonPayload['settings'];
+					var coordinates = jsonPayload['coordinates'];
+					var userDesiredState = jsonPayload['userDesiredState'];
+					webhookAction.onKeyDown(context, settings, coordinates, userDesiredState);
+				}
+				else if(event == "keyUp")
+                {
+                    var settings = jsonPayload['settings'];
+					var coordinates = jsonPayload['coordinates'];
+					var userDesiredState = jsonPayload['userDesiredState'];
+					webhookAction.onKeyUp(context, settings, coordinates, userDesiredState);
+				}
+				else if(event == "willAppear")
+				{
+                    var settings = jsonPayload['settings'];
+					var coordinates = jsonPayload['coordinates'];
+					webhookAction.onWillAppear(context, settings, coordinates);
+				}
+                else if(event == "sendToPlugin") {
+
+                    if (jsonPayload.hasOwnProperty('setName')) {
+
+                        var newValue = jsonPayload.setName;
+                        webhookAction.SetSettings(context, { "setName": newValue });
+
+                    } else if (jsonPayload.hasOwnProperty('setKey')) {
+
+                        var newValue = jsonPayload.setKey;
+                        webhookAction.SetSettings(context, {"setKey": newValue});
+                    }
+                }
+			};
+
+			websocket.onclose = function()
+			{ 
+				// Websocket is closed
+			};
+         };
+         
+         
+         
+         
+    </script>
+
+</body>
+
+</html>

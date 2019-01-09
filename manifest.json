@@ -1,0 +1,36 @@
+{
+  "Actions": [
+    {
+      "Icon": "actionIcon", 
+      "Name": "IFTTT Button",
+      "States": [
+    {
+      "Image": "actionDefaultImage",
+      "TitleAlignment": "middle",
+      "FontSize": "16"
+    }
+  ],
+  "SupportedInMultiActions": false,
+  "Tooltip": "If Stream Deck button pressed, then...",
+  "UUID": "de.tobimori.streamdeckifttt.button"
+}
+],
+"Author": "tobimori",
+"CodePath": "code.html",
+"Description": "Easily integrate Stream Deck in your IFTTT setup and control smart home devices.",
+"Name": "IFTTT Integration",
+"Icon": "pluginIcon",
+"URL": "https://tobimori.de",
+"PropertyInspectorPath": "ifttt_pi.html",
+"Version": "1.0",
+"OS": [
+{
+"Platform": "mac",
+"MinimumVersion" : "10.11"
+},
+{
+"Platform": "windows",
+"MinimumVersion" : "10"
+    }
+  ]
+}
