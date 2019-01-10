@@ -5,21 +5,20 @@
     <meta charset="utf-8" />
     <title>de.tobimori.streamdeckifttt.pi</title>
     <link rel="stylesheet" href="sdpi.css">
-    <script src="common.js"></script>
 </head>
 
 <body>
-<div class="sdpi-wrapper">
+<div class="sdpi-wrapper hidden">
 
     <div class="sdpi-heading">SETTINGS</div>
 
         <div class="sdpi-item">
            <div class="sdpi-item-label">Event Name</div>
-           <input class="sdpi-item-value NameField" value="" onchange="sendValueToPlugin(event.target.value, 'setName')" placeholder="Enter the Event name to be fired">
+           <input class="sdpi-item-value NameField" value="" onchange="sendValueToPlugin(event.target.value, 'eventname')" placeholder="Enter the Event name to be fired">
         </div>
         <div class="sdpi-item">
             <div class="sdpi-item-label">Maker Key</div>
-            <input class="sdpi-item-value KeyField" value="" onchange="sendValueToPlugin(event.target.value, 'setKey')" placeholder="Enter your IFTTT Maker Key">
+            <input class="sdpi-item-value KeyField" value="" onchange="sendValueToPlugin(event.target.value, 'makerkey')" placeholder="Enter your IFTTT Maker Key">
         </div>
 
 </div>
@@ -47,9 +46,14 @@
             };
             // register property inspector to Stream Deck
             websocket.send(JSON.stringify(json));
+            revealPropertyInspector()
         }
     }
 
+    function revealPropertyInspector() {
+        const el = document.querySelector('.sdpi-wrapper');
+        el && el.classList.remove('hidden');
+    }
 
     // our method to pass values to the plugin
     function sendValueToPlugin(value, param) {

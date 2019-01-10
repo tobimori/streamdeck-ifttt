@@ -6,17 +6,17 @@
       "States": [
     {
       "Image": "actionDefaultImage",
-      "TitleAlignment": "middle",
-      "FontSize": "16"
+      "TitleAlignment": "top",
+      "FontSize": "10"
     }
   ],
   "SupportedInMultiActions": false,
   "Tooltip": "If Stream Deck button pressed, then...",
-  "UUID": "de.tobimori.streamdeckifttt.button"
+  "UUID": "de.tobimori.streamdeckifttt.action"
 }
 ],
 "Author": "tobimori",
-"CodePath": "code.html",
+"CodePath": "main.html",
 "Description": "Easily integrate Stream Deck in your IFTTT setup and control smart home devices.",
 "Name": "IFTTT Integration",
 "Icon": "pluginIcon",
