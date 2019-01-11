@@ -22,7 +22,7 @@
 "Icon": "resources/pluginIcon",
 "URL": "https://tobimori.de",
 "PropertyInspectorPath": "propertyinspector/main_pi.html",
-"Version": "1.1",
+"Version": "1.2",
 "OS": [
 {
 "Platform": "mac",
