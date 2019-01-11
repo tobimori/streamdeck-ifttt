@@ -1,11 +1,11 @@
 {
   "Actions": [
     {
-      "Icon": "actionIcon", 
+      "Icon": "resources/actionIcon",
       "Name": "IFTTT Button",
       "States": [
     {
-      "Image": "actionDefaultImage",
+      "Image": "resources/actionDefaultImage",
       "TitleAlignment": "top",
       "FontSize": "10"
     }
@@ -16,13 +16,13 @@
 }
 ],
 "Author": "tobimori",
-"CodePath": "main.html",
-"Description": "Easily integrate Stream Deck in your IFTTT setup and control smart home devices.",
+"CodePath": "plugin/main.html",
+"Description": "Easily integrate the Elgato Stream Deck in your IFTTT setup and control smart home devices.",
 "Name": "IFTTT Integration",
-"Icon": "pluginIcon",
+"Icon": "resources/pluginIcon",
 "URL": "https://tobimori.de",
-"PropertyInspectorPath": "ifttt_pi.html",
-"Version": "1.0",
+"PropertyInspectorPath": "propertyinspector/main_pi.html",
+"Version": "1.1",
 "OS": [
 {
 "Platform": "mac",
