@@ -1,8 +1,11 @@
-![alt text](resources/readme/integration-logo.png "IFTTT Integration for Elgato Stream Deck")
+![IFTTT Integration for Elgato Stream Deck](resources/readme/integration-logo.png "IFTTT Integration for Elgato Stream Deck")
 > Easily integrate the Elgato Stream Deck in your IFTTT setup and control smart home devices.
 
 ## How to use
-#### General installation and setup
+
+If you know how IFTTT Webhooks work, this tutorial is rather obsolete for you. Just enter the Event Name and the Maker Key in the property inspector of your action and you'll be ready to go.
+
+### General installation and setup
 Download the latest release [here](https://github.com/tobimori/streamdeck-ifttt/releases/latest "Hello from the other side...") and execute the file. The Stream Deck software should ask you to continue the installation.
 
 ![Installation](resources/readme/installation.png)
@@ -14,7 +17,7 @@ To continue with the setup, you need to connect your IFTTT account to the Maker 
 
 ![Connect](resources/readme/connect.png)
 
-#### Creating a new action/applet
+### Creating a new action/applet
 
 Drag and drop the IFTTT button action from the actions list to the canvas area.
 After selecting it, you'll see two important settings in the property inspector. 
@@ -43,4 +46,4 @@ Click on create trigger and switch into the Elgato Stream Deck software. Enter t
 
 You can now switch back to IFTTT's page and choose the action service like you want. Examples for this are controlling Phillips Hue lamps or resuming your Sonos speaker.
 
-##### Have fun with your new Smart home-enabled Stream Deck!
+#### Have fun with your new Smart home-enabled Stream Deck!
