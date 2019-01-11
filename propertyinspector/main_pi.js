@@ -35,6 +35,11 @@ function connectSocket(inPort, inUUID, inRegisterEvent, inInfo, inActionInfo) {
             var makerkey = document.getElementById('makerkey');
             makerkey.value = payload.makerkey;
 
+            if(makerkey.value == "undefined" && eventname.value == "undefined") {
+                makerkey.value = "";
+                eventname.value = "";
+            }
+
             revealPropertyInspector()
         }
     };
