@@ -6,7 +6,7 @@ var DestinationEnum = Object.freeze({"HARDWARE_AND_SOFTWARE":0, "HARDWARE_ONLY":
 
 var webhookAction = {
 
-    type : "de.tobimori.streamdeckifttt.action",
+    type : "de.tobimori.streamdeck.ifttt.action",
 
     onKeyDown : function(context, settings, coordinates, userDesiredState) {
     },

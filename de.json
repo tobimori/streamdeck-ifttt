@@ -1,7 +1,7 @@
 {
   "Description": "Integriere das Elgato Stream Deck in dein IFTTT-Setup und steuere deine Smart-Home-Geräte.",
   "Name": "IFTTT-Integration",
-  "de.tobimori.streamdeckifttt.action": {
+  "de.tobimori.streamdeck.ifttt.action": {
     "Name": "IFTTT-Button",
     "Tooltip": "Sobald Stream Deck-Button gedrückt, mache..."
   }
