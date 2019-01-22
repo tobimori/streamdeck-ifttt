@@ -6,13 +6,13 @@
       "States": [
     {
       "Image": "resources/actionDefaultImage",
-      "TitleAlignment": "top",
+      "TitleAlignment": "bottom",
       "FontSize": "10"
     }
   ],
   "SupportedInMultiActions": false,
   "Tooltip": "If Stream Deck button pressed, then...",
-  "UUID": "de.tobimori.streamdeckifttt.action"
+  "UUID": "de.tobimori.streamdeck.ifttt.action"
 }
 ],
 "Author": "tobimori",
@@ -20,15 +20,17 @@
 "Description": "Easily integrate the Elgato Stream Deck in your IFTTT setup and control smart home devices.",
 "Name": "IFTTT Integration",
 "Icon": "resources/pluginIcon",
-"URL": "https://tobimori.de",
+"URL": "https://streamdeck.tobimori.de",
 "PropertyInspectorPath": "propertyinspector/main_pi.html",
-"Version": "1.2",
+"Version": "1.3",
+"Category": "tobimori",
+"CategoryIcon": "resources/categoryIcon",
 "OS": [
 {
-"Platform": "mac",
-"MinimumVersion" : "10.11"
+  "MinimumVersion" : "10.11",
+  "Platform": "mac"
 },
-{
+  {
 "Platform": "windows",
 "MinimumVersion" : "10"
     }
