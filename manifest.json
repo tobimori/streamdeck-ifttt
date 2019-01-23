@@ -10,7 +10,7 @@
       "FontSize": "10"
     }
   ],
-  "SupportedInMultiActions": false,
+  "SupportedInMultiActions": true,
   "Tooltip": "If Stream Deck button pressed, then...",
   "UUID": "de.tobimori.streamdeck.ifttt.action"
 }
