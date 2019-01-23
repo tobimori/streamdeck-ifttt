@@ -2,8 +2,6 @@ var websocket = null;
 var pluginUUID = null;
 var settingsCache = {};
 
-var DestinationEnum = Object.freeze({"HARDWARE_AND_SOFTWARE":0, "HARDWARE_ONLY":1, "SOFTWARE_ONLY":2})
-
 var webhookAction = {
 
     type : "de.tobimori.streamdeck.ifttt.action",
@@ -145,10 +143,5 @@ function connectSocket(inPort, inPluginUUID, inRegisterEvent, inInfo)
                 webhookAction.SendSettings(action, context);
             }
         }
-    };
-
-    websocket.onclose = function()
-    {
-        // Websocket is closed
     };
 };
