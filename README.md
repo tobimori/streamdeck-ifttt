@@ -49,3 +49,7 @@ Click on create trigger and switch into the Elgato Stream Deck software. Enter t
 You can now switch back to IFTTT's page and choose the action service like you want. Examples for this are controlling Phillips Hue lamps or resuming your Sonos speaker.
 
 #### Have fun with your new Smart home-enabled Stream Deck! 
+
+## Support
+
+Feel free to ask your questions/report bugs on the [community-ran Elgato Discord Server](https://discord.gg/aWVu2eM). I'm there too ;)
