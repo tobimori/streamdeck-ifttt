@@ -19,10 +19,10 @@ ___
 ## 🚀 Getting started
 1. Download the integration from the Stream Deck Store.
 
-![](resources/readme/download.png)
+![](resources/readme/streamdeckstore.png)
 
 2. Navigate to IFTTT's website, [IFTTT.com](https://ifttt.com). Create a new account if you haven't done that yet. Then, visit the [Webhooks service site](https://ifttt.com/maker_webhooks) and connect your account by clicking on "Connect".
 
-![](resources/readme/webhook-connect.png)
+![](resources/readme/webhooks-connect.png)
 
 ## 📲 Create an action
