@@ -56,3 +56,7 @@ You can now switch back to IFTTT's page and choose the action service like you w
 # 📞 Help
 
 Feel free to ask your questions on the [Elgato Discord Server](https://discord.com/invite/elgato). Please use GitHub Issues for reporting bugs.
+
+# License
+
+streamdeck-ifttt is licensed under the [MIT License](LICENSE).
