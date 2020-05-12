@@ -4,7 +4,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/macOS-✓-success" alt="macOS supported" />
   <img src="https://img.shields.io/badge/Windows-✓-success" alt="Windows supported" />
-  <img src="https://img.shields.io/badge/Downloads-13.000%2B-blue" alt="Over 13.000 downloads">
+  <img src="https://img.shields.io/endpoint?url=https://streamdeck.api.moeritz.io/shields/downloads/de.tobimori.streamdeck.ifttt" alt="Over 13.000 downloads">
 </p>
 
 <p align="center">
@@ -57,6 +57,6 @@ You can now switch back to IFTTT's page and choose the action service like you w
 
 Feel free to ask your questions on the [Elgato Discord Server](https://discord.com/invite/elgato). Please use GitHub Issues for reporting bugs.
 
-# License
+# 📄 License
 
 streamdeck-ifttt is licensed under the [MIT License](LICENSE).
