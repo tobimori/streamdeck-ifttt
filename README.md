@@ -4,7 +4,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/macOS-✓-success" alt="macOS supported" />
   <img src="https://img.shields.io/badge/Windows-✓-success" alt="Windows supported" />
-  <img src="https://img.shields.io/endpoint?url=https://streamdeck.api.moeritz.io/shields/downloads/de.tobimori.streamdeck.ifttt&label=Downloads" alt="Over 13.000 downloads">
+  <img src="https://img.shields.io/endpoint?url=https://streamdeck.api.moeritz.io/api/shields/downloads/de.tobimori.streamdeck.ifttt&label=Downloads" alt="Over 13.000 downloads">
 </p>
 
 <p align="center">
