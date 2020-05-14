@@ -2,8 +2,8 @@
   <img alt="IFTTT for Elgato Stream Deck" src="resources/readme/integration-logo.png" max-height="100" />
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/macOS-✓-success" alt="macOS supported" />
-  <img src="https://img.shields.io/badge/Windows-✓-success" alt="Windows supported" />
+  <img src="https://img.shields.io/badge/macOS-✓-success?logo=apple" alt="macOS supported" />
+  <img src="https://img.shields.io/badge/Windows-✓-success?logo=windows-95" alt="Windows supported" />
   <img src="https://img.shields.io/endpoint?url=https://streamdeck.api.moeritz.io/api/shields/downloads/de.tobimori.streamdeck.ifttt&label=Downloads" alt="Over 13.000 downloads">
 </p>
 
