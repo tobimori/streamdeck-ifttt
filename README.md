@@ -4,9 +4,9 @@
 <p align="center">
   <img src="https://img.shields.io/badge/macOS-✓-success?logo=apple&style=flat-square&logoColor=white" alt="macOS supported" />
   <img src="https://img.shields.io/badge/Windows-✓-success?logo=windows-95&style=flat-square&logoColor=white" alt="Windows supported" />
-  <img src="https://img.shields.io/endpoint?url=https://streamdeck.api.moeritz.io/api/shields/downloads/de.tobimori.streamdeck.ifttt&style=flat-square&label=Downloads" alt="Over 13.000 downloads">
+  <img src="https://img.shields.io/endpoint?url=https://streamdeck.api.moeritz.io/api/shields/downloads/de.tobimori.streamdeck.ifttt&style=flat-square&label=Downloads" alt="Over 13.000 downloads" />
    <a href="https://twitter.com/tobimori>
-    <img src="https://img.shields.io/twitter/follow/tobimori?color=%231da1f2&label=follow%20%40tobimori&logo=twitter&logoColor=white&style=flat-square" alt="Follow @tobimori on Twitter">
+    <img src="https://img.shields.io/twitter/follow/tobimori?color=%231da1f2&label=follow%20%40tobimori&logo=twitter&logoColor=white&style=flat-square" alt="Follow @tobimori on Twitter" />
    </a>
 </p>
 
